@@ -8,6 +8,20 @@ body {
     color: black;
 }
 /* Class-selectors*/
+.container1 {
+    display: flex;
+    position: relative;
+    top: 36px;
+
+    right: 20px;
+    width: 80em;
+    height: 45em;
+    margin: 0 auto;
+
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
 .container {
     display: flex;
     position: relative;
@@ -20,7 +34,6 @@ body {
     height: 31rem;
     justify-content: flex-start;
     flex-direction: column;
-
 
 }
 
@@ -36,9 +49,7 @@ body {
     top: 10px;
     right: 55px;
 
-    margin: 0 auto;
-
-    margin-bottom: 9px;
+    margin: 0 auto 9px;
 }
 
 .child input {
@@ -46,17 +57,15 @@ body {
     display: block;
 }
 
-
 .container h1 {
     position: relative;
-    left: 0px;
+    left: 0;
     font-size: 27px;
-    
+
     font-weight: bold;
     letter-spacing: 1.5px;
 
 }
-
 
 .child input#email {
 
@@ -68,12 +77,8 @@ body {
     border-bottom: 2px solid black;
 
     width: 25em;
-    padding: 15px;
-
-
-    padding-left: 30px;
+    padding: 15px 15px 15px 30px;
 }
-
 
 .child input#password {
 
@@ -82,7 +87,7 @@ body {
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-bottom:  2px solid black;
+    border-bottom: 2px solid black;
 
     padding: 10px;
 
@@ -101,7 +106,6 @@ hr {
 
 }
 
-
 .child .email {
     position: relative;
     z-index: 1;
@@ -113,7 +117,6 @@ hr {
 
 .child .password {
 
-
     position: relative;
     z-index: 1;
     width: 20px;
@@ -122,105 +125,108 @@ hr {
     left: 10px;
 }
 
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
 
+}
 
-    input:focus,
-    select:focus,
-    textarea:focus,
-    button:focus {
-        outline: none;
+.forgot-password {
+    position: relative;
+    left: 6px;
+    top: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    color: black;
+}
 
-    }
-    
+.forgot-password:hover {
+    color: #A6A6A6;
+}
 
+.forgot-password:active {
+    font-size: large;
+}
 
-    .forgot-password {
-        position: relative;
-        left: 6px;
-        top: 15px;
-        font-size: 15px;
-        font-weight: 600;
-        letter-spacing: 1.5px;
-        text-decoration: none;
-        color: black;
-    }
+.btn {
+    position: relative;
 
-    .forgot-password:hover {
-        color: 	#A6A6A6;
-    }
+    top: 60px;
+    left: 25px;
 
+}
 
-    .forgot-password:active {
-        font-size: large;   
-    }
+.btn button {
 
-    .btn {
-        position: relative;
-  
-        top: 60px;
-        left: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 550;
+    font-style: normal;
+    font-family: 'Raleway', sans-serif;
 
-    }
+}
 
-    .btn button {
-        
-        background-color: black;
-        color: white;
-        border-radius: 10px;
-        width: 300px;
-        height: 50px;
-        text-align: center;
-        cursor: pointer;
-        font-size: 20px;
-        font-weight: 550;
-        font-style: normal;
-        font-family: 'Raleway', sans-serif;
+button:hover {
+    border: none;
+    background-color: #A6A6A6;
+    color: black;
 
-    }
+}
 
+button:active {
+    border: none;
+    background-color: #e9e5e5;
+    color: black;
+    font-weight: 700;
 
-    button:hover {
-        border:  none;
-        background-color: #A6A6A6;
-        color: black;
+}
 
-    }
+.text {
+    font-family: 'IBM Plex Sans', sans-serif;
+    position: relative;
+    top: 65px;
+    left: -64px;
+    font-size: 16px;
+    font-weight: 700;
+    word-spacing: 2px;
+}
 
-    button:active {
-        border:  none;
-        background-color: #e9e5e5;
-        color: black;
-        font-weight: 700;
+span {
+    color: hsl(30, 100%, 50%);
+    font-variant: small-caps;
+    font-weight: 700;
+    font-size: 30px;
+}
+.container-signup {
+    color: hsl(30, 100%, 50%);
+}
 
-    }
+.container-signup:hover {
+    color: hsl(30, 100%, 39%);
+    cursor: pointer;
+}
 
+.container-signup:active {
+    color: black;
+    cursor: pointer;
+}
 
-    .text {
-        font-family: 'IBM Plex Sans', sans-serif;
-        position: relative;
-        top: 65px;
-        left: -64px;
-        font-size: 16px;
-        font-weight: 700;
-        word-spacing: 2px;
-    }
-    
-    span {
-        color:hsl(30, 100%, 50%);
-        font-variant: small-caps;
-        font-weight: 700;
-        font-size: 30px;
-    }
-    .container-signup {
-        color: hsl(30, 100%, 50%);
-    }
+.orange-background {
+    position: relative;
+    left: -24.3em;
+    bottom: -6.25em;
 
-    .container-signup:hover{
-        color: hsl(30, 100%, 39%);
-        cursor: pointer;
-    }
-
-    .container-signup:active{
-        color: black;
-        cursor: pointer;
-    }
+    width: 10.5em;
+    height: 31.05em;
+    background-color: hsl(30, 100%, 50%);
+}
